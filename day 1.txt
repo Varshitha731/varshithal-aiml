@@ -1,0 +1,234 @@
+DAY-1
+nubers are equal or not 
+ 
+#include <stdio.h>
+
+int main() 
+{
+   
+ int num ,first,second;
+  
+  printf("Enter te first number");
+
+    scanf("%d",&first,&num);
+   
+ printf("Enter the second number");
+
+    scanf("%d",&second,&num);
+   
+ if(first==second)
+   
+ {
+       
+ printf("the entered numbers are equal \n",num);
+  
+  }
+    else
+    {
+      
+  printf("entered numbers are not equal",num);
+ 
+   }
+   
+ return 0
+
+
+q=digit or a number
+ 
+#include <stdio.h>
+
+
+int main()
+ 
+{
+   
+ int num;
+          
+  printf("Enter the integer value:");
+       
+     scanf("%d",&num);
+  
+  if(num<=9 &&  num>=-9)
+  
+  {
+     
+   printf("User entered integer value is digit \n",num);
+ 
+   }
+  
+  else
+   
+ {
+      
+  printf("user entered integer value is number",num);
+ 
+   }
+  
+  return 0;
+}
+
+
+q=3 diigit number
+  
+#include <stdio.h>
+
+
+int main() 
+{
+  
+  int num;
+      
+     
+ printf("Enter the integer value:");
+ 
+           scanf("%d",&num);
+ 
+   if((num<=999 && num>=100)||( num>=-999 && num<=-100))
+  
+  {
+        printf("it is a three digit number \n",num);
+  
+  }
+    else
+    {
+       
+ printf("it is not a three digit number",num);
+ 
+   }
+ 
+   return 0;
+
+}
+
+q=multiple of 3 and 5
+// Online C compiler to run C program online 
+
+#include <stdio.h>
+
+
+int ma
+in()
+ {
+ 
+   int num ;
+ 
+   printf("enter the number");
+
+    scanf("%d",&num);
+   
+ if(num%3==0 && num%5==0)
+
+    {
+       
+ printf("%d multiple of 3 or 5 \n",num);
+
+    }
+    
+else
+   
+ {
+       
+ printf("%d  not a multiple of 3 and 5",num);
+
+}
+
+}
+
+
+q=voting age
+
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+
+int main() 
+{
+   
+ int age ;
+  
+  printf("enter the age");
+
+    scanf("%d",&age);
+   
+ if(age>=18)
+   
+ {
+     
+   printf("eligible to vote\n",age);
+
+    }
+ 
+   else
+   
+ {
+    
+    printf("not eligible to vote",age);
+
+}
+}
+
+
+//write a c program to read a month number as input fom the user and check wheather it is avlid month number or not 
+
+#include <stdio.h>
+
+
+int main()
+ {
+
+int num, month;
+  
+  printf("enter a number");
+  
+  scanf("%d",&num);
+
+if(num>=1 && num<=12)
+
+{
+  
+  printf("%d it is a valid month number",num);
+
+}
+
+else
+
+{
+   
+ printf("%d is not a valid month number",num);
+
+}
+
+}
+
+
+q=even or odd
+
+#include <stdio.h>
+
+
+int main() 
+{
+int num ;
+ 
+   printf("enter a number");
+
+    scanf("%d",&num);
+if(num%2==0)
+
+{
+    
+printf("%d it is even",num);
+
+}
+
+else
+
+{
+ 
+   printf("%d it is odd",num);
+
+}
+}
+
+
