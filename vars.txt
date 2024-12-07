@@ -1,0 +1,882 @@
+DAY-1
+nubers are equal or not 
+ 
+#include <stdio.h>
+
+int main() 
+{
+   
+ int num ,first,second;
+  
+  printf("Enter te first number");
+
+    scanf("%d",&first,&num);
+   
+ printf("Enter the second number");
+
+    scanf("%d",&second,&num);
+   
+ if(first==second)
+   
+ {
+       
+ printf("the entered numbers are equal \n",num);
+  
+  }
+    else
+    {
+      
+  printf("entered numbers are not equal",num);
+ 
+   }
+   
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+q=digit or a number
+ 
+#include <stdio.h>
+
+
+int main()
+ 
+{
+   
+ int num;
+          
+  printf("Enter the integer value:");
+       
+     scanf("%d",&num);
+  
+  if(num<=9 &&  num>=-9)
+  
+  {
+     
+   printf("User entered integer value is digit \n",num);
+ 
+   }
+  
+  else
+   
+ {
+      
+  printf("user entered integer value is number",num);
+ 
+   }
+  
+  return 0;
+}
+
+
+
+
+q=3 diigit number
+  
+#include <stdio.h>
+
+
+int main() 
+{
+  
+  int num;
+      
+     
+ printf("Enter the integer value:");
+ 
+           scanf("%d",&num);
+ 
+   if((num<=999 && num>=100)||( num>=-999 && num<=-100))
+  
+  {
+        printf("it is a three digit number \n",num);
+  
+  }
+    else
+    {
+       
+ printf("it is not a three digit number",num);
+ 
+   }
+ 
+   return 0;
+
+}
+
+
+q=multiple of 3 and 5
+// Online C compiler to run C program online 
+
+#include <stdio.h>
+
+
+int ma
+in()
+ {
+ 
+   int num ;
+ 
+   printf("enter the number");
+
+    scanf("%d",&num);
+   
+ if(num%3==0 && num%5==0)
+
+    {
+       
+ printf("%d multiple of 3 or 5 \n",num);
+
+    }
+    
+else
+   
+ {
+       
+ printf("%d  not a multiple of 3 and 5",num);
+
+}
+
+}
+
+
+
+
+q=voting age
+
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+
+int main() 
+{
+   
+ int age ;
+  
+  printf("enter the age");
+
+    scanf("%d",&age);
+   
+ if(age>=18)
+   
+ {
+     
+   printf("eligible to vote\n",age);
+
+    }
+ 
+   else
+   
+ {
+    
+    printf("not eligible to vote",age);
+
+}
+}
+
+
+
+
+
+//write a c program to read a month number as input fom the user and check wheather it is avlid month number or not 
+
+#include <stdio.h>
+
+
+int main()
+ {
+
+int num, month;
+  
+  printf("enter a number");
+  
+  scanf("%d",&num);
+
+if(num>=1 && num<=12)
+
+{
+  
+  printf("%d it is a valid month number",num);
+
+}
+
+else
+
+{
+   
+ printf("%d is not a valid month number",num);
+
+}
+
+}
+
+
+
+
+
+q=even or odd
+
+#include <stdio.h>
+
+
+int main() 
+{
+int num ;
+ 
+   printf("enter a number");
+
+    scanf("%d",&num);
+if(num%2==0)
+
+{
+    
+printf("%d it is even",num);
+
+}
+
+else
+
+{
+ 
+   printf("%d it is odd",num);
+
+}
+}
+
+
+
+
+
+
+DAY-2
+
+//write a c program to read the input for num as integer and print the numbers from 1 to num
+ 
+#include <stdio.h>
+
+
+int main()
+ 
+{
+
+int num;
+
+    printf("Enter a number=");
+ 
+   scanf("%d",&num );
+   
+ for(int i=1;i<=num;i++)
+
+{
+    
+printf("%d  \n",i);
+
+}
+   
+ return 0;
+
+}
+
+
+
+
+
+
+
+//write a c program to read the input for num as integer and print the numbers from 1 to num 
+
+#include <stdio.h>
+
+
+int main() 
+
+{
+int num;
+  
+  printf("Enter a number=");
+
+    scanf("%d",&num );
+  
+  for(int i=1;i<=num%;i++)
+
+{
+  
+  printf("%d  \n",i);
+
+}
+   
+ return 0;
+
+}
+
+
+
+
+
+
+
+
+
+//write a c program to print the  numbers from 1 to n using while loop 
+
+#include <stdio.h>
+
+
+int main() 
+
+{
+
+int num;
+int i=1;
+ 
+   printf("enter the number");
+ 
+   scanf("%d",&num);
+  
+  while(i<=num)
+ 
+   {
+      
+  printf("%d \n",i);
+   
+     i++;
+   
+ }
+}
+
+
+
+
+
+//write a c program to print the even numbers from 1 to n using while loop
+ 
+#include <stdio.h>
+
+
+int main() 
+
+{
+int num;
+
+int i=1;
+  
+  printf("enter the number");
+
+    scanf("%d",&num);
+  
+  while(i<=num)
+  
+  {
+    
+    if(i%2==0)
+  
+      printf("%d \n",i);
+
+        i++;
+   
+ }
+
+}
+
+
+
+
+
+//write a c program to print the oddnumbers from 1 to n using while loop 
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+int num;
+
+int i=1;
+    
+printf("enter the number");
+ 
+   scanf("%d",&num);
+  
+  while(i<=num)
+ 
+   {
+       
+ if(i%2!=0)
+   
+     printf("%d \n",i);
+
+        i++;
+ 
+}
+}
+
+
+
+
+
+is it a prime number or not a prime  number 
+#include <stdio.h>
+
+
+int main()
+
+{
+  
+  int num;
+ 
+   printf("enter a number=");
+  
+  scanf("%d",&num);
+ 
+   int isprime;
+ 
+   for(int i=2;i<=num/2;i++)
+ 
+      {
+          
+          isprime=1;
+ 
+          if(num%i==0)
+ 
+       {
+            isprime=0;
+    
+    }
+     
+  }
+   
+ if(isprime==1)
+
+    {
+     
+   printf("%d is a prime numner",num);
+ 
+   }
+    else
+   
+ {
+      
+  printf("%d not a prime number",num);
+  
+  }
+
+    
+return 0
+}
+
+
+
+
+
+
+// write a c program to print the sqaure value from 1 to n 
+
+#include <stdio.h>
+
+
+int main()
+ 
+
+{
+  
+ 
+ int num;
+
+ 
+   printf("enter a number=");
+  
+ scanf("%d",&num);
+
+  for(int i=1;i<=num;i++)
+
+  {
+    
+  printf("%d  \n",i*i);
+ 
+ }
+
+}
+
+
+
+
+
+
+
+
+// write a c program to sum of nth number 
+
+#include <stdio.h>
+
+
+int main()
+ 
+
+{
+  
+ 
+ int num;
+
+  int sum=0;
+ 
+  printf("enter a number=");
+ 
+  scanf("%d",&num);
+  
+ for(int i=1;i<=num;i++)
+
+   {
+  
+     sum=sum+i;  
+
+    }
+    
+printf("%d is summation of 1 to %d  \n",sum,num);
+
+}
+
+
+
+
+
+
+
+
+// write a c program to print the number of even numbers and odd numbers present from 1 to n
+
+#include <stdio.h>
+
+
+int main() 
+
+{
+ 
+ 
+  int num;
+  
+ 
+ int even_count=0;
+ 
+ int odd_count=0;
+  
+ printf("enter a number=");
+
+   scanf("%d",&num);
+ 
+  for(int i=1;i<=num;i++)
+  
+ {
+    if(i%2==0)  
+ {
+      
+  even_count++;
+  
+  }
+  
+  else
+  
+  {
+      
+  odd_count++;
+   
+ }
+ 
+  }
+ 
+  printf("even count =%d  \n",even_count);
+
+   printf("odd count =%d  \n",odd_count);
+
+}
+
+
+
+
+
+
+
+
+// write a c program to read the integer value as input fo the user and find the count of digit in the number
+#include <stdio.h>
+
+
+int main() 
+
+{
+   
+ int num;
+   
+ int count;
+   
+ printf("enter the number");
+ 
+   scanf("%d",&num);
+  
+  while(num!=0)
+  
+  {
+     
+   num=num/10;
+
+        count++;
+  
+      printf("%d is the count od digits   \n",count);
+  
+      printf("--------------------\n");
+   
+ }
+
+}
+ 
+
+
+
+
+
+
+
+DAY-3
+
+
+
+
+//write a cprogram tp ptint numbers from n to 1
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num;
+  
+  printf("enter a number :");
+    
+scanf("%d",&num);
+  
+  for(int i=num;i>=1;i--)
+   
+ {
+     
+   printf("%d   \n",i);
+  
+  }
+
+ 
+   return 0;
+
+}
+
+
+
+
+
+2 .write a c program to print the even numbers from n to 1 
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+ 
+   int num;
+ 
+   printf("enter a number :");
+ 
+   scanf("%d",&num);
+ 
+   for(int i=num;i>=1;i--)
+
+    {
+     
+   if(i%2==0)
+      
+  {
+             
+printf("%d   \n",i);
+  
+      }
+      
+ 
+    }
+
+  
+  return 0;
+
+}
+
+
+
+
+3.write a c program to print the odd numbers from n to 1
+
+#include <stdio.h>
+
+
+int main() 
+
+{
+   
+ int num;
+  
+  printf("enter a number :");
+
+    scanf("%d",&num);
+
+    for(int i=num;i>=1;i--)
+  
+  {
+      
+  if(i%2!=0)
+     
+   {
+            
+ printf("%d   \n",i);
+
+        }
+       
+
+    }
+
+   
+ return 0;
+
+}
+
+
+
+
+3.write a c program to read amount a input from the user and print number of notes required in indian currency dimention
+
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int amount;
+ 
+   printf("Enter the amount :  \n");
+  
+  scanf("%d",&amount);
+  
+  printf("2000------------------------> %d \n",amount/2000);
+ 
+  amount=amount%2000;
+    
+ printf("500------------------------> %d  \n",amount/500);
+
+     amount=amount%500;
+   
+   printf("100------------------------>  %d \n",amount/100);
+ 
+     amount=amount%100;
+    
+   printf("50------------------------>  %d \n",amount/50);
+   
+    amount=amount%50;
+    
+   printf("10------------------------>  %d \n",amount/10);
+  
+amount=amount%10;
+      printf("5------------------------> %d \n",amount/5);
+  
+amount=amount%5;
+       printf("2------------------------> %d  \n",amount/2);
+    
+     amount=amount%2;
+      
+    printf("1------------------------> %d \n",amount/1);
+      
+    amount=amount%1;
+
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+4.write a c program to print the multiplication table of n 
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+   
+ int num;
+  
+  printf("Enter the value of num:  \n");
+  
+  scanf("%d",&num);
+
+    for(int i=1;i<=10;++i)
+   
+ {
+       
+ printf("%d * %d=%d  \n",i,num,num*i);
+ 
+   }
+
+}    
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
