@@ -1,0 +1,530 @@
+DAY-3
+
+
+
+
+//write a cprogram tp ptint numbers from n to 1
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num;
+  
+  printf("enter a number :");
+    
+scanf("%d",&num);
+  
+  for(int i=num;i>=1;i--)
+   
+ {
+     
+   printf("%d   \n",i);
+  
+  }
+
+ 
+   return 0;
+
+}
+
+
+
+
+
+2 .write a c program to print the even numbers from n to 1 
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+ 
+   int num;
+ 
+   printf("enter a number :");
+ 
+   scanf("%d",&num);
+ 
+   for(int i=num;i>=1;i--)
+
+    {
+     
+   if(i%2==0)
+      
+  {
+             
+printf("%d   \n",i);
+  
+      }
+      
+ 
+    }
+
+  
+  return 0;
+
+}
+
+
+
+
+3.write a c program to print the odd numbers from n to 1
+
+#include <stdio.h>
+
+
+int main() 
+
+{
+   
+ int num;
+  
+  printf("enter a number :");
+
+    scanf("%d",&num);
+
+    for(int i=num;i>=1;i--)
+  
+  {
+      
+  if(i%2!=0)
+     
+   {
+            
+ printf("%d   \n",i);
+
+        }
+       
+
+    }
+
+   
+ return 0;
+
+}
+
+
+
+
+4.write a c program to read amount a input from the user and print number of notes required in indian currency dimention
+
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int amount;
+ 
+   printf("Enter the amount :  \n");
+  
+  scanf("%d",&amount);
+  
+  printf("2000------------------------> %d \n",amount/2000);
+ 
+  amount=amount%2000;
+    
+ printf("500------------------------> %d  \n",amount/500);
+
+     amount=amount%500;
+   
+   printf("100------------------------>  %d \n",amount/100);
+ 
+     amount=amount%100;
+    
+   printf("50------------------------>  %d \n",amount/50);
+   
+    amount=amount%50;
+    
+   printf("10------------------------>  %d \n",amount/10);
+  
+amount=amount%10;
+      printf("5------------------------> %d \n",amount/5);
+  
+amount=amount%5;
+       printf("2------------------------> %d  \n",amount/2);
+    
+     amount=amount%2;
+      
+    printf("1------------------------> %d \n",amount/1);
+      
+    amount=amount%1;
+
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+5.write a c program to print the multiplication table of n 
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+   
+ int num;
+  
+  printf("Enter the value of num:  \n");
+  
+  scanf("%d",&num);
+
+    for(int i=1;i<=10;++i)
+   
+ {
+       
+ printf("%d * %d=%d  \n",i,num,num*i);
+ 
+   }
+
+}    
+      
+      
+      
+      
+      
+      
+
+
+
+
+6.write a c program to  print thr reverse multiplication table
+ 
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num;
+  
+  printf("Enter the value of num:  \n");
+ 
+   scanf("%d",&num);
+
+   for(int i=10;i>=1;i--)
+
+    {
+       
+ printf("%d * %d=%d  \n",i,num,num*i);
+ 
+   }
+
+}    
+      
+      
+      
+      
+      
+      
+
+
+
+7.write a c program to print the  multiplicatin tablr rom 1 to n
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num ,i,j,product;
+
+    printf("Enter the value of num:  \n");
+ 
+   scanf("%d",&num);
+  
+  for(int i=1;i<=10;i++)
+   
+ {
+    
+    for(j=1;j<=10;j++)
+        {
+            product=1*j;
+            printf("%d x %d=%d\t  \n",i,j,product );
+        }
+        printf(" \n");
+    }
+}    
+      
+      
+      
+      
+      
+      
+
+
+
+8.write a c program to print the reverse multiplicatin tablr rom 1 to n
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num ,i,j,product;
+ 
+   printf("Enter the value of num:  \n");
+ 
+   scanf("%d",&num);
+   
+ for(int i=1;i<=num;i++)
+   
+ {
+   
+     for(j=10;j>=1;j--)
+   
+     {
+      
+      product=i*j;
+       
+     printf("%d x %d=%d\t  \n",i,j,product );
+      
+  }
+     
+   printf(" \n");
+
+    }
+  }    
+      
+      
+      
+      
+      
+      
+
+
+
+
+9. online
+#include <stdio.h>
+
+
+int main()
+ {
+   
+void Display()
+  
+  {
+      
+  printf("Welcome to the world of c programming  \n");
+    }
+ 
+    Display();
+  
+   Display();
+   
+  Display();
+ 
+    Display();
+   
+  Display();
+  
+   Display();
+  
+   Display();
+     
+Display();
+
+}
+
+
+
+
+10 write  c program to add two numbers
+
+#include <stdio.h>
+
+
+int main()
+{
+    
+void add(int num1,int num2)
+  
+  {
+    
+    printf("Addition of %d & %d=%d  \n",num1,num2,(num1+num2));
+    
+}
+   
+ add(20,20);
+  
+  add(1200,1500);
+
+}
+
+
+
+
+11write  c program to substract two numbers using functios
+
+#include <stdio.h>
+
+
+int main()
+ {
+ 
+   void sub(int num1,int num2)
+
+    {
+       
+ printf("substraction of %d & %d=%d  \n",num1,num2,(num1-num2));
+  
+  }
+ 
+   sub(20,20);
+   
+ sub(1200,1500);
+ 
+   sub(10,7);
+
+}
+
+
+
+
+
+
+
+
+
+
+12.write  c program to product two numbers using functions
+
+#include <stdio.h>
+
+
+int main() 
+{
+  
+  void product(int num1,int num2)
+    
+{
+       
+ printf(" of %d & %d=%d  \n",num1,num2,(num1*num2));
+  
+  }
+   
+ product(20,20);
+ 
+   product(1200,1500);
+  
+  product(10,7);
+
+}
+
+
+
+
+13write  c program to product two numbers using functions 
+
+
+#include <stdio.h>
+
+int main()
+ {
+ 
+   int dividend, divisor, quotient, remainder;
+  
+  printf("Enter dividend: ");
+ 
+   scanf("%d", &dividend);
+  
+  printf("Enter divisor: ");
+  
+  scanf("%d", &divisor);
+
+    // Computes quotient
+   
+ quotient = dividend / divisor;
+
+  
+  // Computes remainder
+
+    remainder = dividend % divisor;
+
+    printf("Quotient = %d\n", quotient);
+    printf("Remainder = %d", remainder);
+    return 0;
+}
+
+
+
+
+14 write  c program tp impliment the basic calcultor using fuctions
+
+#include<stdio.h>
+
+int main()
+
+{
+ 
+   int num1,num2;
+ 
+   printf("enter the value of num1  :");
+  
+  scanf("%d",&num1);
+  
+  printf("enter the value of num2  :");
+
+    scanf("%d",&num2);
+
+    void calculate(int x, int y)
+
+    {
+     
+   printf("summation  : %d  \n",(x+y));
+  
+      printf("difference : %d \n",(x-y));
+  
+      printf("product : %d \n",(x*y));
+       
+ printf("quotient  : %d  \n",(x/y));
+ 
+       printf("remainder : %d \n",(x%y));
+ 
+   }
+ 
+   calculate(num1,num2);
+
+}
+
+
