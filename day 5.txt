@@ -1,0 +1,423 @@
+1.pointer example
+
+#include <stdio.h>
+
+
+int main() 
+{
+  
+  int num=144;
+   
+ int *pointer=&num;
+  
+  printf("num=%d  \n");
+ 
+   printf("(referred)num=%d  \n",num);
+  
+  printf("num=%p  \n",num);
+  
+  printf("pointer=%p",pointer);
+   
+ return 0;
+}
+
+
+
+2 age pointer example
+
+#include <stdio.h>
+
+int main()
+ {
+    
+int age=22;
+   
+ int *ptr=&age;
+
+    int _age=*ptr;
+ 
+   printf("%d\n",_age);
+  
+  printf("%p\n",&age);
+  
+  printf("%p\n",ptr);
+ 
+   printf("%p\n",&ptr);
+
+    printf("%d\n",age);
+  
+  printf("%d\n",*ptr);
+  
+  printf("%d\n",*(&age));
+
+  
+  return 0;
+
+}
+
+3.array example wrt marks of physics,chemistry and maths
+ 
+#include <stdio.h>
+
+int main()
+ {
+  
+  int marks[3];
+ 
+   printf("physics : ");
+   
+ scanf("%d",&marks[0]);
+   
+ printf("chemistry : ");
+  
+  scanf("%d",&marks[1]);
+
+    printf("maths : ");
+ 
+   scanf("%d",&marks[2]);
+ 
+   printf("physics=%d,",marks[0]);
+ 
+   printf("chemistry=%d,",marks[1]);
+  
+  printf("maths=%d,",marks[2]);
+
+    
+}
+
+
+4.accesing he array elements
+
+#include <stdio.h>
+
+void printnumbers(int *arr,int n);
+
+void _printnumbers(int arr[],int n);
+
+
+int main()
+
+{
+
+int arr[]={1,  2,  3,  4,  5,  6};
+
+printnumbers(arr, 6);
+
+printnumbers(arr, 6);
+
+}
+
+void printnumbers(int *arr, int n)
+
+{
+    
+for(int i=0 ;  i<n;  i++)
+
+    {
+
+           printf("%d  :  %d\n",i,arr[i]);
+
+    }
+
+}
+
+void _printnumbers(int arr[],int n)
+
+{
+    for(int  i=0;  i<n;  i++)
+    
+{
+          
+printf("%d  :  %d\n",i,arr[i]);
+
+    }
+}
+
+
+
+
+5 A TO Z
+
+#include <stdio.h>
+
+
+int main() 
+{
+   
+ int i,j;
+   
+  char letter='A';
+ 
+   for(int i=1;i<=5;i++)
+
+    {
+       
+ for(int j=1;j<=5;j++)
+  
+      {
+      
+  printf(" %c ",letter);
+
+        letter++;
+   
+     }
+     
+   printf("  \n");
+  
+  }
+    
+   
+ return 0;
+
+}
+
+
+
+day 5 
+1
+write a c program to check wheather the user entered number is prime number or not
+
+#include <stdio.h>
+
+
+int main()
+ {
+ 
+   int num;
+   
+ int count=0;
+
+    // Write C code here
+   
+ printf("enter a number  : ");
+ 
+   scanf("%d",&num);
+   
+ for(int i=1;i<=num;i++)
+    
+{
+      
+  if(num%i==0)
+    
+    {
+        
+    count++;
+   
+     }
+   
+ }
+if(count==2)
+{
+ 
+   printf("It is a Prime number",num);
+
+}
+
+else
+
+{
+  
+  printf("It is not a Prime number",num);
+
+}
+   
+ return 0;
+
+}
+
+
+
+2
+example for string
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+
+char prog_lang[]="C Programming";
+
+printf("%s \n",prog_lang);
+
+for(int i=0;i<=13;i++)
+
+{
+  
+ printf("%c \n",prog_lang[i]);
+
+}
+
+return 0;
+
+}
+
+
+3
+print all prime numbers from 1 to n
+
+#include <stdio.h>
+
+
+int isprime(int num)
+
+{
+
+if(num<=1)
+
+return 0;
+
+for(int i=2;i*i<=num;i++)
+
+{
+  
+  if(num%i==0)
+ 
+   return 0;
+
+}
+
+return 1;
+
+}
+
+int main()
+
+{
+   
+ int n;
+  
+  printf("enter the vlue of n  : ");
+
+    scanf("%d",&n);
+ 
+   printf("\n prime numbers between 1 and %d are :   \n",n);
+  
+  for(int i=2;i<=n;i++)
+    {
+        if(isprime(i))
+     
+   {
+         
+   printf("%d  \n",i);
+     
+  }
+  
+  }
+   
+ printf("\n");
+  
+  return 0;
+}
+
+
+
+
+
+
+4
+//write a c program to declare and create an array of size 10 and access the array elements 
+#include <stdio.h>
+    int main()
+{
+    int num_array[10];
+    num_array[0]=10;
+    num_array[1]=20;
+    num_array[2]=30;
+    num_array[3]=40;
+    num_array[4]=50;
+    num_array[5]=60;
+    num_array[6]=70;
+    num_array[7]=80;
+    num_array[8]=90;
+    num_array[9]=100;
+   printf("array elements are : \n");
+    for(int i=0;i<10;i++)
+    {
+   printf("elements %d ,\n",num_array[i]);
+    }
+}
+
+
+
+
+
+
+5
+student name,3 subjects marks,average, total and grade - 1st class,3rd class,fail
+ 
+#include <stdio.h>
+int main()
+{
+    int sub1,sub2,sub3;
+    char studentname[10];
+    int total;
+    float average;
+    printf("enter the student name : ");
+    scanf("%c",&name);
+    printf("enter the sub1 marks :\n");
+    scanf("%d ",&sub1);
+    printf("enter the sub2 marks :\n");
+    scanf("%d ",&sub2);
+    printf("enter the sub3 marks :\n");
+    scanf("%d ",&sub3);
+    printf("student report card \n");
+    if(sub1<35 || sub2<35 || sub3<35)
+    {
+        printf("fail");
+    }
+    else
+    {
+        total=sub1+sub2+sub3;
+        average=total/3;
+        printf("")
+    }
+    if(sub1<50 || sub2<50 || sub3<50)
+    {
+        printf("first class ");
+    }
+    else
+    {
+        printf("third class");
+    }
+}
+
+
+6 billing
+ 
+#include <stdio.h>
+int main()
+{
+ int productcode;
+ int price;
+ char productname[15];
+ int quantity;
+ printf("enter the product code : \n");
+ scanf("%ud \n",&productcode);
+ printf("enter the productname :\n");
+ scanf("%us \n",&productname);
+ printf("enter the quantity : \n");
+ scanf("%d \n",&quantity);
+ printf("enter the price : ");
+ scanf("%d \n",&price);
+ printf("customer bill");
+ printf("--------------\n");
+ printf("product : %s \n",productname);
+ printf("quantity : %d \n",quantity);
+ printf("price:%d*price \n",quantity,price);
+ printf("net amount=%d",(quantity*price));
+ 
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
